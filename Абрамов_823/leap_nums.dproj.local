@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.962,=C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.199,C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Dev\Громыко_Абрамов_823_номера високосных_годов\leap_nums.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.276,=C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Dev\Громыко_Абрамов_823_номера високосных_годов\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Dev\Громыко_Абрамов_823_номера високосных_годов\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

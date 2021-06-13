@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.787,C:\Dev\Unit1.pas=C:\Dev\Громыко_Абрамов_822_кол-во_дней_в_году\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.929,C:\Dev\Project1.dproj=C:\Dev\Громыко_Абрамов_822_кол-во_дней_в_году\leap_check.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.787,C:\Dev\Unit1.dfm=C:\Dev\Громыко_Абрамов_822_кол-во_дней_в_году\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.457,=C:\Dev\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

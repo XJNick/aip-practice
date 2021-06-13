@@ -1,0 +1,133 @@
+﻿unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.Menus;
+
+type
+  TForm1 = class(TForm)
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Button1: TBitBtn;
+    Button2: TBitBtn;
+    ListBox1: TListBox;
+    OpenDialog1: TOpenDialog;
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    MemoAboutMe: TMemo;
+    MemoTask: TMemo;
+    Label2: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure N1Click(Sender: TObject);
+    procedure N2Click(Sender: TObject);
+    procedure N3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    function chk : Boolean;
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  arr1 : array of real;
+  n : longint;
+  f : textfile;
+  r : Boolean;
+
+implementation
+
+{$R *.dfm}
+
+function TForm1.chk : Boolean;
+var
+  i : integer;
+  arr2 : array of real;
+begin
+  setlength (arr2 , n + 1);
+  chk := False;
+
+  for i := 1 to n do
+    if arr2[i] < 0 then
+      arr2[i] := sqr(arr1[i])
+    else
+      arr2[i] := arr1[i];
+
+  r := false;
+  for i := 1 to n - 1 do
+  begin
+    if not(arr2[i] > arr2[i + 1]) and not(r) then
+      chk := True
+    else begin
+      r := True;
+      chk := False;
+    end;
+  end;
+end;
+
+procedure TForm1.N1Click(Sender: TObject);
+begin
+  MemoTask.Visible := True;
+  MemoAboutMe.Visible := False;
+  GroupBox1.Visible := False;
+end;
+
+procedure TForm1.N2Click(Sender: TObject);
+begin
+  MemoTask.Visible := False;
+  MemoAboutMe.Visible := False;
+  GroupBox1.Visible := True;
+end;
+
+procedure TForm1.N3Click(Sender: TObject);
+begin
+  MemoTask.Visible := False;
+  MemoAboutMe.Visible := True;
+  GroupBox1.Visible := False;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  i: Integer;
+begin
+  if opendialog1.Execute then
+  begin
+    ListBox1.Items.LoadFromFile(OpenDialog1.FileName);
+    Button2.Enabled := True;
+    Assignfile (f , OpenDialog1.FileName);
+    reset (f);
+    readln (f , n);
+    setlength (arr1 , n + 1);
+    for i := 1 to n do
+    read (f , arr1[i]);
+  closefile (f);
+  end;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+var
+  i , j : integer;
+  result : real;
+begin
+  if chk then
+  begin
+    result := 0;
+    for i := 1 to n do
+      result := result + arr1[i]
+  end
+  else
+  begin
+    result := 1;
+    for i := 1 to n do
+      result := result * arr1[i];
+  end;
+
+  Label2.Caption := 'Результат: ' + FloatToStr (result);
+end;
+
+end.

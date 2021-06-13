@@ -1,0 +1,95 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls, Vcl.Grids;
+
+type
+  TForm1 = class(TForm)
+    Memo1: TMemo;
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    StringGrid1: TStringGrid;
+    ListBox1: TListBox;
+    GroupBox1: TGroupBox;
+    Button2: TButton;
+    OpenDialog1: TOpenDialog;
+    Button1: TButton;
+    procedure N1Click(Sender: TObject);
+    procedure N2Click(Sender: TObject);
+    procedure N3Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  b: array[1..9] of real;
+  arr: array[0..8, 0..8] of 0..100;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TForm1.Button2Click(Sender: TObject);
+var
+  f: TextFile;
+  i, j: Integer;
+  a: real;
+begin
+  ListBox1.Clear;
+  OpenDialog1.InitialDir := ExtractFilePath(ParamStr(0));
+  if OpenDialog1.Execute then
+  begin
+    for i := 0 to StringGrid1.RowCount-1 do
+      StringGrid1.Rows[i].Clear;
+    AssignFile(f, OpenDialog1.FileName);
+    Reset(f);
+    i := 0;
+    j := 0;
+    while not eof(f) do
+    begin
+      if eoln(f) then
+      begin
+        inc(i);
+        j := 0;
+      end;
+       read(f, arr[i, j]);
+       StringGrid1.Cells[j, i] := IntToStr(arr[i, j]);
+       inc(j);
+    end;
+
+    StringGrid1.RowCount := i+1;
+    StringGrid1.ColCount := j;
+    CloseFile(f);
+
+  end;
+
+end;
+
+procedure TForm1.N1Click(Sender: TObject);
+begin
+  Memo1.Text := 'Дана действительная матрица MxN. Определить числа b[1],...,b[m], равные разностям наибольших и наименьших значений элементов строк';
+  Memo1.Visible := true;
+end;
+
+procedure TForm1.N2Click(Sender: TObject);
+begin
+  Memo1.Visible := false;
+end;
+
+procedure TForm1.N3Click(Sender: TObject);
+begin
+  Memo1.Visible := true;
+  Memo1.Text := 'Задачу подготовил Громыко Никита, обучающийся группы 207-П, на факультете ВТиПО'
+end;
+
+end.

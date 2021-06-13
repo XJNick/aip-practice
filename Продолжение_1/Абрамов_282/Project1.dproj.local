@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.850,C:\Dev\Продолжение_1\Абрамов_282\Unit1.dfm=C:\Dev\Menu_шаблон\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.453,C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Dev\Menu_шаблон\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.850,C:\Dev\Продолжение_1\Абрамов_282\Unit1.pas=C:\Dev\Menu_шаблон\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.483,C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Dev\Menu_шаблон\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.293,C:\Dev\Продолжение_1\Абрамов_282\Project1.dproj=C:\Dev\Menu_шаблон\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.835,=C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.453,C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Dev\Menu_шаблон\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.002,=C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.276,=C:\Users\NickGrom\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

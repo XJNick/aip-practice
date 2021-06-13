@@ -1,0 +1,153 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 212
+  ClientWidth = 395
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 18
+    Width = 60
+    Height = 25
+    Caption = 'Label1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 121
+    Width = 7
+    Height = 25
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Top = 152
+    Width = 7
+    Height = 25
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 32
+    Top = 183
+    Width = 7
+    Height = 25
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 32
+    Top = 44
+    Width = 37
+    Height = 37
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    MaxLength = 2
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ComboBox1: TComboBox
+    Left = 75
+    Top = 44
+    Width = 113
+    Height = 37
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ItemIndex = 0
+    ParentFont = False
+    TabOrder = 1
+    Text = #1071#1085#1074#1072#1088#1100
+    Items.Strings = (
+      #1071#1085#1074#1072#1088#1100
+      #1060#1077#1074#1088#1072#1083#1100
+      #1052#1072#1088#1090
+      #1040#1087#1088#1077#1083#1100
+      #1052#1072#1081
+      #1048#1102#1085#1100
+      #1048#1102#1083#1100
+      #1040#1074#1075#1091#1089#1090
+      #1057#1077#1085#1090#1103#1073#1088#1100
+      #1054#1082#1090#1103#1073#1088#1100
+      #1053#1086#1103#1073#1088#1100
+      #1044#1077#1082#1072#1073#1088#1100)
+  end
+  object Edit2: TEdit
+    Left = 194
+    Top = 44
+    Width = 58
+    Height = 37
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    MaxLength = 4
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 258
+    Top = 44
+    Width = 113
+    Height = 37
+    Caption = 'Button1'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Left = 32
+    Top = 8
+    Width = 339
+    Height = 185
+    TabOrder = 4
+  end
+  object MainMenu1: TMainMenu
+    Left = 344
+    object N1: TMenuItem
+      Caption = #1059#1089#1083#1086#1074#1080#1077
+      OnClick = N1Click
+    end
+    object N2: TMenuItem
+      Caption = #1056#1077#1096#1077#1085#1080#1077
+    end
+    object N3: TMenuItem
+      Caption = #1054#1073' '#1072#1074#1090#1086#1088#1077
+    end
+  end
+end

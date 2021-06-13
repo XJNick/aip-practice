@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.396,=C:\Users\Никита\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.952,=C:\Users\Никита\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.327,C:\Users\Никита\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Никита\Desktop\Delphi\АиП практика\Продолжение_3\Интегрирование_методом_серединных_прямоугольников\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.432,C:\Users\Никита\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Никита\Desktop\Delphi\АиП практика\Продолжение_3\Интегрирование_методом_серединных_прямоугольников\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.432,C:\Users\Никита\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Никита\Desktop\Delphi\АиП практика\Продолжение_3\Интегрирование_методом_серединных_прямоугольников\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.863,=C:\Users\Никита\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
